@@ -16,8 +16,10 @@ try:
     sales=pd.read_csv('data/cars_dataset.csv')
     # print(sales.describe())
     # print(sales.head())
-    print(sales)
-    # y=sales
+    # print(sales)
+    y=sales.selling_price;features=['year','km_driven'];X=sales[features]
+    print(X.describe())
+    print(X.head())
 
 except:
     # import tensorflow as tf
