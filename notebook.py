@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 # from torch import *
 # from keras import *
+import tensorflow as tf
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Dense
 try:
     # class CarDekho:
     #     """CarDekho 2020 Data Analysis and Predictions"""
@@ -22,9 +25,6 @@ try:
     print(X.head())
 
 except:
-    # import tensorflow as tf
-    # from tensorflow.keras import Sequential
-    # from tensorflow.keras.layers import Dense
     sales=pd.read_csv('data/cars_dataset.csv')
-    sales.describe();
+    print(sales.describe())
     # model=Sequential([Dense(units=1)])    
